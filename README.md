@@ -1,4 +1,4 @@
-# Rubik's Cube Solver & Trainer
+# Rubik's Cube Solver
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
