@@ -1,83 +1,73 @@
-# Rubik's Cube Web Application
+# Rubik's Cube Solver & Trainer
 
-A feature-rich, React-based web application for Rubik's Cube enthusiasts. This project provides tools for solving, practicing, and interacting with a virtual Rubik's Cube.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
+</p>
 
-## Features
+A modern, visually stunning Rubik's Cube solver and practice tool, built with React, TypeScript, and Vite. This application provides an interactive and engaging experience for cube enthusiasts of all skill levels.
 
-- **Interactive 3D/2D Cube**: A fully interactive representation of a Rubik's Cube.
-- **Manual Solver**: Input your cube's state manually to get a solution sequence.
-- **Practice Mode**: Time your solves and track your progress.
-- **Pattern Library**: Apply various interesting patterns to the cube.
-- **Statistics Tracking**: View your solve count, best time, and average time.
-- **Move Recording**: Record, replay, and undo move sequences on the interactive cube.
+## 🚀 Live Demo
 
-## Setup and Installation
+[View the live demo here](https://rubikcube-solver.vercel.app/)
 
-### 1. Prerequisites
+## ✨ Key Features
 
-- Node.js (v18 or higher)
-- npm
+*   **Interactive Cube:** A fully interactive 3D and 2D Rubik's Cube that you can manipulate and solve.
+*   **Practice Mode:** Scramble the cube and time your solves to track your progress and improve your speed.
+*   **Statistics:** Keep track of your solve count, average time, and personal bests.
+*   **Pattern Library:** Explore and apply various interesting cube patterns.
+*   **Responsive Design:** A clean and modern UI that works seamlessly on all devices.
 
-### 2. Install Dependencies
+## 🛠️ Getting Started
 
-Clone the repository and install the required packages:
+To get a local copy up and running, follow these simple steps.
 
-```bash
-npm install
-```
+### Prerequisites
 
-### 3. Run the Application
+*   Node.js (v14 or later)
+*   npm
 
-Start the development server:
+### Installation
 
-```bash
-npm run dev
-```
+1.  Clone the repo
+    ```sh
+    git clone https://github.com/your_username/rubikcube-solver-main.git
+    ```
+2.  Install NPM packages
+    ```sh
+    npm install
+    ```
+3.  Start the development server
+    ```sh
+    npm run dev
+    ```
 
-The application will be available at `http://localhost:5173` (or the next available port).
-
-## How to Use
-
-The application is divided into several tabs:
-
-- **Home**: The main dashboard with a view of the cube and basic controls like Scramble and Reset.
-- **Interactive**: A sandbox mode where you can freely manipulate the cube, apply quick moves, and record your move sequences.
-- **Solver**: Manually input the colors of your physical cube's faces to receive a solution string.
-- **Practice**: A dedicated mode for speed-solving. It includes a timer that starts and stops automatically.
-- **Patterns**: A library of classic cube patterns that you can apply to the virtual cube.
-- **Stats**: A dashboard displaying your solving statistics, including total solves, best time, and average time.
-
-## Project Structure
+## 📂 Project Structure
 
 ```
-src/
-├── App.tsx                 # Main application component and router
-├── Cube.ts                 # Core cube logic (state, moves)
-├── cfopSolver.ts           # Logic for the CFOP solving method
-├── components/
-│   ├── CubeInput.tsx       # The manual solver interface
-│   ├── CubeView.tsx        # 2D and 3D cube visualization
-│   └── InteractiveCube.tsx # The interactive cube and pattern library
-└── ...
-```
-
-## Development
-
-### Available Scripts
-
-- `npm run dev`: Starts the Vite development server.
-- `npm run build`: Compiles the TypeScript code and builds the project for production.
-- `npm run lint`: Lints the codebase using ESLint.
-- `npm run preview`: Serves the production build locally for preview.
-- `npm test`: Runs tests using `ts-node`.
-
-### Contributing
-
-1.  Fork the repository.
-2.  Create a new feature branch.
-3.  Make your changes.
-4.  Submit a pull request.
-
-## License
-
-This project is licensed under the MIT License.
+rubikcube-solver-main/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── assets/
+│   │   └── react.svg
+│   ├── components/
+│   │   ├── CubeInput.tsx
+│   │   ├── CubeView.tsx
+│   │   └── InteractiveCube.tsx
+│   ├── styles/
+│   │   └── theme.css
+│   ├── App.css
+│   ├── App.tsx
+│   ├── Cube.ts
+│   ├── cubejs.d.ts
+│   ├── index.css
+│   ├── main.tsx
+│   └── vite-env.d.ts
+├── .gitignore
+├── index.html
+├── package.json
+├── README.md
+└── vite.config.ts
